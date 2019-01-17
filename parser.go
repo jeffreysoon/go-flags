@@ -160,6 +160,8 @@ func NewParser(data interface{}, options Options) *Parser {
 
 		if err == nil {
 			g.parent = p
+		} else {
+			panic(err)
 		}
 
 		p.internalError = err
